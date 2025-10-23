@@ -1,13 +1,41 @@
-# DriveSOTIF: Advancing Perception SOTIF Through Multi-Modal Large Language Models
- **[Paper (IEEE TVT)](https://ieeexplore.ieee.org/document/11162558)**  
- **[arXiv](https://arxiv.org/abs/2505.07084)** (Note: copyright transferred to IEEE)  
- **[Supplementary material](supplemental.pdf)**  
-* Authors: Shucheng Huang, Freda Shi, Chen Sun, Jiaming Zhong, Minghao Ning, Yufeng Yang, Yukun Lu, Hong Wang, Amir Khajepour
+# 🚘 DriveSOTIF: Advancing Perception SOTIF Through Multi-Modal Large Language Models
 
-DriveSOTIF is the first work to focus on addressing perception-related SOTIF challenges in autonomous driving using multimodal large language models (MLLMs). We introduce the DriveSOTIF dataset and benchmark several state-of-the-art MLLMs (Qwen 2.5 VL and InternVL3) on it. We also provide sample codes for dataset generation and ensemble yolo models to enhance perception performance and estimate uncertainty.
+[![IEEE TVT](https://img.shields.io/badge/IEEE_TVT-Paper-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/11162558)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.07084-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.07084)
+[![Supplementary](https://img.shields.io/badge/Supplementary-Material-4B8BBE?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](supplemental.pdf)
 
-## Abstract
-Human drivers possess spatial and causal intelligence, enabling them to perceive driving scenarios, anticipate hazards, and react to dynamic environments. In contrast, autonomous vehicles lack these abilities, making it challenging to manage perception-related Safety of the Intended Functionality (SOTIF) risks, especially under complex or unpredictable driving conditions. To address this gap, we propose fine-tuning multimodal large language models (MLLMs) on a customized dataset specifically designed to capture perception-related SOTIF scenarios. Benchmarking results show that fine-tuned MLLMs achieve an 11.8% improvement in close-ended VQA accuracy and a 12.0% increase in open-ended VQA scores compared to baseline models, while maintaining real-time performance with a 0.59-second average inference time per image. We validate our approach through real-world case studies in Canada and China, where fine-tuned models correctly identify safety risks that challenge even experienced human drivers. This work represents the first application of domain-specific MLLM fine-tuning for the SOTIF domain in autonomous driving.
+---
+
+### 👩‍💻 **Authors**
+**Shucheng Huang**, **Freda Shi**, **Chen Sun**, **Jiaming Zhong**, **Minghao Ning**, **Yufeng Yang**, **Yukun Lu**, **Hong Wang**, **Amir Khajepour**
+
+---
+
+### 🧠 **Overview**
+**DriveSOTIF** is the first work to address **perception-related Safety of the Intended Functionality (SOTIF)** challenges in autonomous driving using **Multi-Modal Large Language Models (MLLMs)**.  
+We introduce the **DriveSOTIF dataset**, benchmark **state-of-the-art MLLMs (Qwen2.5-VL, InternVL3)**, and provide:
+- 🔹 Sample code for dataset generation  
+- 🔹 Ensemble YOLO-based perception enhancement  
+- 🔹 Uncertainty estimation modules for perception confidence
+
+---
+
+### 🧾 **Abstract**
+> Human drivers possess spatial and causal intelligence, enabling them to perceive driving scenarios, anticipate hazards, and react to dynamic environments.  
+> In contrast, autonomous vehicles lack these abilities, making it challenging to manage perception-related **SOTIF risks**, especially under complex or unpredictable driving conditions.  
+> 
+> To address this gap, we fine-tune **multimodal large language models (MLLMs)** on a customized dataset designed for perception-related SOTIF scenarios. Benchmarking results demonstrate:
+> - **+11.8%** improvement in close-ended VQA accuracy  
+> - **+12.0%** increase in open-ended VQA scores  
+> - **0.59 s** average inference time per image (real-time capable)  
+> 
+> Real-world case studies from **Canada and China** validate that fine-tuned models can identify subtle safety risks that even experienced human drivers may overlook.  
+> 
+> This work represents the **first domain-specific MLLM fine-tuning** for the SOTIF domain in autonomous driving.
+
+---
+
+
 
 
 ## Dataset and code release:
@@ -82,3 +110,9 @@ the research grant provided by OpenAI and computing resources provided by the Ve
 The PeSOTIF and CADC dataset are accessed under CC BY-NC-SA 4.0 license. 
 Proprietary LLMs, such as GPT4, GPT4o, etc. are accessed under their licenses, terms and conditions. 
 Open-source LLM models and LVLM, such as Blip, Blip2, LLAVA, Qwen2-VL, etc., are accessed under their corresponding licenses.
+
+
+## Copyright notice for the journal paper: 
+©2025 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including
+reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or
+reuse of any copyrighted component of this work in other works.
